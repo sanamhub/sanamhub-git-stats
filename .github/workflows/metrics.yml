@@ -2,7 +2,7 @@
 name: Metrics
 on:
   # Schedule updates (each hour)
-  schedule: [{cron: "30 * * * *"}]
+  schedule: [{ cron: "30 * * * *" }]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   # push: {branches: ["master", "main"]}
@@ -26,11 +26,11 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
 
           # Options
-          user: NazmusSayad
+          user: sanamhub
           template: classic
           base: header, activity, community, metadata
           base_hireable: yes
-          config_timezone: Asia/Dhaka
+          config_timezone: Asia/Kathmandu
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_limit: 0
